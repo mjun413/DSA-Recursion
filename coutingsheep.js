@@ -1,10 +1,10 @@
-function countingSheep(num) {
-  if (num === 0) {
-    return "All sheep jumped over the fence";
-  } else (
-    return num + ": Another sheep jumps over the fence";
-    num = num - 1;
-  )
+const countingSheep = (numSheeps) => {
+    if (numSheeps === 0) {
+        console.log('All sheep jumped over the fence')
+        return
+    }
+    console.log(numSheeps + ': Another sheep jumpers over the fence')
+    return countingSheep(numSheeps - 1)
 }
 
 countingSheep(3)
